@@ -4,9 +4,9 @@
 
    img { 
       width: 10%;
-      padding: 1rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
    }
 
    .cat {
@@ -39,19 +39,19 @@
  
 @keyframes slidein {
    from {
-     margin-bottom:50%
+     margin-top:100%
      
    }
  
    to {
-     margin-top: 0%;
+     margin-bottom: 0%;
      
    }
  }
 
  ul {
    display: flex;
-   flex-direction: row;
+   flex-direction:row-reverse;
    list-style: none;
    align-self: center;
       
@@ -59,11 +59,11 @@
 
  li {
    width: 5rem;
-   height: 25rem;
+   height: 30rem;
    object-fit: cover;
    border-radius: 10px;
    cursor: pointer;
-   transition: width 1s ease-in-out;
+   transition: width 0.5s ease-in-out;
    background-size:cover;
    
    margin:2px;
@@ -76,7 +76,7 @@
 
  li:hover {
    width: 50rem;
-   font-size: 2rem;
+   font-size: 1.5rem;
    color: rgb(255, 255, 255);
  }
 
