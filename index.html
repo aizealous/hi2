@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+   img { 
+      width: 10%;
+      padding: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+   }
+
+   .cat {
+      animation-duration: 5s;
+      animation-name: slidein;
+      
+   }
+ 
+   
+   
+   body {
+      background-color: rgb(73, 74, 68);
+      text-align:center;
+     
+   }
+   
+   span {
+      font-size:20px;
+   }
+   
+   br { margin-bottom: 5rem;
+       padding-bottom: 2rem;
+   }
+
+.card {
+   display: flex;
+   justify-content: center;
+}
+
+ 
+@keyframes slidein {
+   from {
+     margin-bottom:50%
+     
+   }
+ 
+   to {
+     margin-top: 0%;
+     
+   }
+ }
+
+ ul {
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+   align-self: center;
+      
+ }
+
+ li {
+   width: 5rem;
+   height: 25rem;
+   object-fit: cover;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: width 1s ease-in-out;
+   background-size:cover;
+   
+   margin:2px;
+   padding: 5px;
+   font-size: 1rem;
+   color: rgb(34, 21, 0);
+   box-shadow: 0px 0px 20px burlywood;
+
+ }
+
+ li:hover {
+   width: 50rem;
+   font-size: 2rem;
+   color: rgb(255, 255, 255);
+ }
+
+ #card1 {
+   background-image: url("pic1.webp");
+   color: rgb(255, 255, 255);
+   
+ }
+ #card2 {
+   background-image: url("pic2.png");
+   color: rgb(255, 255, 255);
+ }
+ #card3 {
+   background-image: url("pic3.png");
+   color: rgb(27, 0, 0);
+ }
+ #card4 {
+   background-image: url("pic4.png");
+   color: rgb(27, 0, 0);
+ }
+ #card5 {
+   background-image: url("pic5.png");
+   color: rgb(27, 0, 0);
+ }
+ #card6 {
+   background-image: url("pic6.png");
+   color: rgb(255, 255, 255);
+ }
+
+</style>
+
+   <body>
+
+   <img class= "cat" src="./yoga-cat3.png" alt="grrrr grrrr click acá">
+
+
+   <div class= "card">  
+      <ul>
+         <li class="card" id="card1">
+            Todos tenemos alguna actividad que nos gusta mucho y si es apasionante la hace más interesante todavía.
+         </li>
+      
+         <li class="card" id="card2">
+            Entiendo que el yoga es parte de varios intereses para ti como son la holística y el bienestar animal, por lo que espero te guste este presente. Fue un desafío elegirlo ya que muchos no me parecían tu tipo y con muuuuuuucho texto cansante.
+         </li>
+
+         <li class="card" id="card3">
+            Estaba poco dudoso de que lo aceptes o no ya sea porque te da timidez o no sé qué, espero no sea por desprecio jaja.
+         </li>
+ 
+         <li class="card" id="card4">
+            Soy en extraterrestre que está aprendiendo y conociendo la cultura local y me parece usé términos muy neutros jaja, y bueno para no ser aburrido o creo le dicen turro, solamente diré que espero esté a la altura de tus gustos.
+         </li>
+
+         <li class="card" id="card5">
+            No te preocupes que no es de amazon, ni la nasa, más bien lo tuve que adquirir directo de la India con traducción al español.
+            <br>
+            Esta vez Pomelo no me ayudó solo dijo miau miau miua.
+         </li>
+
+         <li class="card" id="card6">
+            Bueno, que la pases lindo y esta web haya provocado una linda sonrisa en ti.
+            <br>
+            De igual modo me gustaría saber qué te pareció ya sea personalmente, por escrito o por señales de humo, como lo prefieras.
+         </li>
+      </ul>
+      
+   </div>
+   
+   </body>
+</html>
+
+
+
+
