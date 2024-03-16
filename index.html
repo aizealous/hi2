@@ -195,7 +195,15 @@
    </div>
    <img class= "flower" src="./pic3.webp" alt="flor">
 
+   <button onclick="vibrateTwoTimes()">Poco o nada</button>
+   <button onclick="vibrateTwoTimes()">Demasiado</button>
+
    </body>
+   <script>
+      const vibrateTwoTimes = () => {
+      window.navigator.vibrate([300, 100, 200, 50, 300, 50, 300])
+    }
+   </script>
 </html>
 
 
