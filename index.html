@@ -160,7 +160,7 @@
 
    <body>
 
-   <img class= "cat" src="./yoga-cat3.png" alt="grrrr grrrr click acá">
+   <img class= "cat" src="./yoga-cat3.png" alt="grrrr grrrr click acá" onclick="vibrateImg()">
    <h1>LEELO DE IZQUIERDA A DERECHA HACIENDO DOBLE CLICK EN CADA RECUADRO ;)</h1>
 
    <div class= "card"> 
@@ -197,15 +197,14 @@
       </ul>
       
    </div>
-   <img class= "flower" src="./pic3.webp" alt="flor">
+   <h1>QUIERES SABER LA ENERGÍA DE LA GATITA Y LA FLOR? SÓLO TOCA ;)</h1>
+   <img class= "flower" src="./pic3.webp" alt="flor" onclick="vibrateImg()">
 
-   <button onclick="vibrateTwoTimes()">Poco o nada</button>
-   <button onclick="vibrateTwoTimes()">Demasiado</button>
 
    </body>
    <script>
-      const vibrateTwoTimes = () => {
-      window.navigator.vibrate([1000,100,1000,100,1000,100,1000,100,500, 100, 500, 50, 500, 50, 1000,100, 500, 100, 800, 100, 500, 100,1000])
+      const vibrateImg = () => {
+      window.navigator.vibrate([1000,100,1000,100,1000,100,1000,100,500, 100, 500, 50, 500, 50, 1000,100, 500, 100, 800, 100, 500, 100,1000, 100, 800, 100, 500, 100,1000])
     }
    </script>
 </html>
