@@ -118,6 +118,7 @@
    -webkit-text-stroke: 1px rgb(28, 26, 26);
    font-weight: bolder;
    text-shadow: rgb(250, 250, 250) 0px 0px 8px;
+   
 
  }
 
@@ -186,7 +187,7 @@
          <li class="card" id="card6">
             Bueno, que la pases lindo y esta web haya provocado una hermosa sonrisa en ti.
             <br><br>
-            Me gustaría saber qué te pareció todo ya sea personalmente, o por señales de humo o como lo prefieras.
+            Me gustaría saber qué te pareció ya sea personalmente, por señales de humo, o como lo prefieras.
          </li>
          <li class="card" id="card7">
             Esta vez Pomelo sólo dijo miau miau &#128049;
@@ -198,13 +199,16 @@
       
    </div>
    
-   <img class= "flower" src="./pic3.webp" alt="flor" onclick="vibrateImg()">
+   <img class= "flower" id= "flower" src="./pic3.webp" alt="flor" onclick="vibrateImg()">
 
 
    </body>
 <script>
    const vibrateImg = () => {
-   window.navigator.vibrate([500,100,1000,50,500,200,1000,50,500, 100, 1000, 200, 500, 100, 1000,50, 500])
+   window.navigator.vibrate([500,100,1000,50,500,200,1000,50,500, 100, 1000, 200, 500, 100, 1000,50, 500]);
+   const nodeList = document.querySelectorAll("img");
+   for (let i = 0; i < nodeList.length; i++) {
+      nodeList[i].style.boxShadow= "0px 0px 1000px burlywood";}
    }
 </script>
 </html>
