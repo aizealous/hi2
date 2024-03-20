@@ -110,7 +110,7 @@
  li:hover {
    width: 40%;
    font-size: 1.5rem;
-   color: rgb(255, 255, 255);
+   color: rgb(255, 0, 0);
    height:auto;
    background-size:cover;
    object-fit: cover;
@@ -193,10 +193,10 @@
             Esta vez Pomelo sólo dijo miau miau &#128049;
             <br><br>
             Por cierto, sabes cómo libera energía positiva la gatita o la flor ? sólo tócalas &#128521;
-            <br> 
+             
          </li>
       </ul>
-      
+      <br><br>
    </div>
    
    <img class= "flower" id= "flower" src="./pic3.webp" alt="flor" onclick="vibrateImg()">
@@ -206,9 +206,11 @@
 <script>
    const vibrateImg = () => {
    window.navigator.vibrate([500,100,1000,50,500,200,1000,50,500, 100, 1000, 200, 500, 100, 1000,50, 500]);
+   //const backgr=document.querySelector("body");
+   //backgr.style.backgroundColor="black";
    const nodeList = document.querySelectorAll("img");
    for (let i = 0; i < nodeList.length; i++) {
-      nodeList[i].style.boxShadow= "0px 0px 1000px burlywood";}
+      nodeList[i].style.boxShadow= "0px 0px 200px rgb(255, 255, 255)";}
    }
 </script>
 </html>
