@@ -29,9 +29,6 @@
     }
 
 
-
-
-
    .flower {
       width: 50%;
       box-shadow: 0px 0px 20px burlywood;
@@ -45,7 +42,14 @@
       
    }
  
-   
+   .namaste {
+      margin-top: 0rem;
+      font-weight: bold;
+      color: #ffffff;
+      font-size:2rem;
+   }
+
+
    
    body {
       background-color: rgb(73, 74, 68);
@@ -177,7 +181,7 @@
          </li>
  
          <li class="card" id="card4">
-            Soy un extraterrestre conociendo la cultura local, por lo que espero no y me parece que usé términos neutros, y para no ser aburrido o creo le dicen turro, solamente espero esté a la altura de tus gustos.
+            Soy un extraterrestre conociendo la cultura local pero me parece usé términos neutros, y para no ser aburrido o creo le dicen turro, solamente espero esté a la altura de tus gustos.
          </li>
 
          <li class="card" id="card5">
@@ -187,7 +191,7 @@
          </li>
 
          <li class="card" id="card6">
-            Sería bueno saber qué te pareció ya sea por telegrafía, señales de humo, o este viernes / sábado en un lugar compartir un rato.
+            Sería bueno saber qué te pareció ya sea por telegrafía, señales de humo, o este viernes / sábado en un lugar compartiendo un rato.
             <br>Yo pensaba pero no puede ser SORPRESA (Camelia ó Apartamento bar), ó el lugar que propongas democráticamente &#129310;
          </li>
          <li class="card" id="card7">
@@ -199,8 +203,9 @@
       </ul>
       
    </div>
-   
+   <div class="namaste"> </div>
    <img class= "flower" id= "flower" src="./pic3.webp" alt="flor" onclick="vibrateImg()">
+   
 
 
    </body>
@@ -209,10 +214,13 @@
    window.navigator.vibrate([500,100,1000,50,500,200,1000,50,500, 100, 1000, 200, 500, 100, 1000,50, 500]);
    //const backgr=document.querySelector("body");
    //backgr.style.backgroundColor="white";
+   const namaste=document.getElementsByClassName("namaste")[0];
+   namaste.innerHTML="NAMASTE<br>BELU";
    const nodeList = document.querySelectorAll("img");
    for (let i = 0; i < nodeList.length; i++) {
       nodeList[i].style.boxShadow= "0px 0px 500px burlywood";}
    }
+
 </script>
 </html>
 
